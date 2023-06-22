@@ -16,11 +16,11 @@ setInterval(() => {
   let s = new Date().getSeconds();
 
   hh.style.strokeDashoffset = 510 - (510 * h) / 12;
-  //12 houres clock
+  // 2 houre clock
   mm.style.strokeDashoffset = 630 - (630 * m) / 60;
-  //60 minutes
+
   ss.style.strokeDashoffset = 760 - (760 * s) / 60;
-  //60seconds
+  
   sec_dot.style.transform = `rotateZ(${s * 6}deg)`;
   //360 / 60 seconds = 6
 
